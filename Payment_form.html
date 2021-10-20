@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1 > PAYMENT FORM</h1>
-    <p>
+    <form><p>
     Name:<input type="text" name="name" required >
     
     <fieldset><legend>Gender*</legend>
@@ -19,14 +19,44 @@
 </p>
 
 <p>
-    Email:<input type="email" name="email" id="email" value="something@gmail.com">
+    Email:
 </p>    
 
 <p>
-    Address:<textarea name="address" rows="10" cols="50"></textarea>
+    Address:
 </p>
 <p>
     Pincode:<input type="number" name="pincode" id="pincode">
 </p>
+<form>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" value="something@gmail.com">
+    <br><br><label for="address">Address:</label><br>
+    <textarea name="address" rows="10" cols="50"></textarea>
+    <br><br><label for="pincode" >Pincode:</label>
+    <input type="number" name="pincode" id="pincode" >
+</form>
+<h2> Payment Info</h2>
+<p>
+    Card type:
+    <select name="card_type" id="card_type" required>
+    <option value=" ">----Select a card type----</option>
+    <option value="visa">Visa</option>
+    <option value="rupay">Rupay</option>
+    <option value="mastercard">Mastercard</option>
+</select>
+</p>
+
+<p>
+    Card no* :<input type="number" name="no" id="no" required>
+</p>
+<p>
+    Expiration date:<input type="date" name="e_date" id="e_date">
+</p>
+<p>
+    CVV:<input type="password" name="cvv id="cvv" required>
+</p>
+<input type="submit" value="submit">
+</form>
 </body>
 </html>
